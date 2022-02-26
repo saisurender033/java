@@ -1,0 +1,19 @@
+class args
+{
+static void fun2(String str, int... a)
+{
+System.out.println("String: " + str);
+System.out.println("Number of arguments is: "+ a.length);
+for (int i : a)
+{
+System.out.println(i+" ");
+System.out.println();
+}
+}
+public static void main(String args[])
+{
+fun2("sai",100,200);
+fun2("surender",1, 2, 3, 4, 5,8,9,300);
+fun2("rvr");
+}
+}
