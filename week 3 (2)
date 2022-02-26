@@ -1,0 +1,39 @@
+import java.util.Scanner;
+class time
+{
+int HH,MM,SS;
+time(int HH)
+{
+this.HH = HH ;
+System.out.println("The time in hours format is  : " + HH);
+}
+time(int HH ,int MM)
+{
+this.HH = HH;
+this.MM= MM;
+System.out.println("The time in hours and minutes format is : "+ HH + ":" +MM);
+}
+time (int HH,int MM,int SS)
+{
+this.HH = HH;
+this.MM= MM;
+this.SS=SS;
+System.out.println("The time in hours , minutes and seconds  format is : "+ HH + ":" +MM + ":"+ SS);
+}
+}
+class testtime
+{
+public static void main(String args[])
+{
+Scanner num = new Scanner(System.in);
+System.out.println("enter no of hours :");
+int HH = num.nextInt();
+System.out.println("enter no of  minutes :");
+int MM = num.nextInt();
+System.out.println("enter no of seconds :");
+int SS = num.nextInt();
+time t1 = new time(HH);
+time t2 = new time(HH,MM);
+time t3 = new time(HH,MM,SS);
+}
+}
