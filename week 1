@@ -1,0 +1,59 @@
+import java.util.*;
+class employee
+{
+String name;
+String id;
+int salary;
+int hours;
+void getinfo()
+{
+    Scanner s= new Scanner(System.in);
+    System.out.println(" enter the name of employee");
+    String name= s.nextLine();
+    System.out.println("enter the id ");
+    String id =s.nextLine();
+    System.out.println(" enter the salary");
+    int salary =s.nextInt();
+    System.out.println(" enter no of hours");
+    int hours =s.nextInt();
+}
+void addsal()
+{
+    if (salary<500)
+    {
+        salary=salary+10;
+        System.out.println("salary incrimented for low salary is "+salary);
+    }
+}
+void addwork()
+{
+    if (hours>6)
+    {
+        salary=salary+5*(hours-6);
+        System.out.println("Salary inrimented for extra hours"+salary);
+    }
+}
+void display()
+{
+    System.out.println(" final salary of "+name+" is "+salary);
+}
+}
+class Main //employee demo
+{
+    public static void main (String args[])
+    {
+        int k;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter no of  testcases");
+        int s=sc.nextInt();
+        employee e[]=new employee[s];
+        for(k=0;k<s;k++)
+        {
+            e[k]=new employee();
+            e[k].getinfo();
+            e[k].addwork();
+            e[k].addsal();
+            e[k].display();
+        }
+    }
+}
