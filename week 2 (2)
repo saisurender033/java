@@ -1,0 +1,93 @@
+class sai1
+{
+int a,b,c;
+sai1(int a,int b ,int c)
+{
+this.a=a;
+this.b=b;
+this.c=c;
+}
+void display()
+{
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+}
+}
+class sai
+{
+public static void main(String args[])
+{
+sai s1=new sai(30,50,90);
+s1.display();
+}}
+
+
+//second programme
+class rvr
+{
+void cse()
+{
+System.out.println("welcome to cse dept");
+}
+void ece()
+{
+System.out.println("welcome to ece dept");
+cse();
+}
+}
+class this_rvrjc
+{
+public static void main(String args[])
+{
+rvr r=new rvr();
+r.ece();
+}
+}
+
+
+
+
+//third programme 
+class thisdemo
+{
+thisdemo()
+{
+this(30);
+System.out.println("welcome");
+}
+thisdemo(int x)
+{
+System.out.println(x);
+}
+}
+class thisd
+{
+public static void main(String args[])
+{
+thisdemo e=new thisdemo();
+}
+}
+
+//fourth programme
+class thisdemo
+{
+thisdemo()
+{
+System.out.println("welcome");
+}
+thisdemo(int x)
+{
+this();
+System.out.println(x);
+}
+}
+class thisp
+{
+public static void main(String args[])
+{
+thisdemo s=new thisdemo(30);
+}
+}
+
+
